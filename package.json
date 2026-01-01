@@ -4,7 +4,7 @@
   "description": "JRK Check-in App with Cloud Sync",
   "main": "index.html",
   "scripts": {
-    "start": "node api/data.js",
+    "start": "api/data.js",
     "dev": "vercel dev"
   },
   "dependencies": {
