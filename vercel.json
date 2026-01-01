@@ -1,1 +1,19 @@
-ewogICJ2ZXJzaW9uIjogMiwKICAiYnVpbGRzIjogWwogICAgewogICAgICAic3JjIjogInNlcnZlci5qcyIsCiAgICAgICJ1c2UiOiAiQHZlcmNlbC9ub2RlIgogICAgfQogIF0sCiAgInJvdXRlcyI6IFsKICAgIHsKICAgICAgInNyYyI6ICIvKC4qKSIsCiAgICAgICJkZXN0IjogIi9zZXJ2ZXIuanMiCiAgICB9CiAgXSwKICAiZW52IjogewogICAgIk5PREVfRU5WIjogInByb2R1Y3Rpb24iCiAgfQp9
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
