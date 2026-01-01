@@ -1,16 +1,7 @@
 {
   "name": "jrk-checkin-app",
   "version": "1.0.0",
-  "description": "JRK Check-in App with Cloud Sync",
-  "main": "index.html",
-  "scripts": {
-    "start": "node api/data.js",
-    "dev": "vercel dev"
-  },
-  "dependencies": {
-    "cors": "^2.8.5"
-  },
   "engines": {
-    "node": "24.x"
+    "node": "20.x"
   }
 }
